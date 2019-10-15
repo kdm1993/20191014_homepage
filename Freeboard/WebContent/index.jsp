@@ -102,7 +102,7 @@
 			<a href="Join.jsp">회원가입</a>
 			<a href="memberLogOut.jsp">회원로그아웃</a>
 			<a href="memberLoginForm.jsp">회원로그인</a>
-			<a href="selectFreeboard">글목록</a>
+			<a href="FreeboardDAO.do">글목록</a>
 		</div>
 	</div>
 </body>
