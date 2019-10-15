@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>Chap7Quwebxml</display-name>
+	<welcome-file-list>
+		<welcome-file>NewFile.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/Error500.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>java.lang.NullPointerException
+		</exception-type>
+		<location>/NullPointerErrorHandling.jsp</location>
+	</error-page>
+	<resource-ref>
+		<res-ref-name>jdbc/kdm1993</res-ref-name>
+		<res-type>javax.sql.DataSource</res-type>
+		<res-auth>Container</res-auth>
+	</resource-ref>
+</web-app>
